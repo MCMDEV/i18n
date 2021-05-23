@@ -1,9 +1,11 @@
 package de.helixdevs.i18n.api;
 
+import java.util.Set;
+
 public interface TranslationManager {
 
-    TranslationRepository getTranslationRepository();
+    Set<TranslationRepository> getTranslationRepositories();
 
-    void registerToPlatform();
+    void registerToPlatforms();
 
 }

@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="i18n-paper" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="" />
+    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/i18n_paper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-adventure/src/main/java/de/helixdevs/i18n/adventure/AdventureTranslationConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/TranslationManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlatform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-paper/i18n-paper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/I18nPaperPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TranslationPacketAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-adventure/src/main/java/de/helixdevs/i18n/adventure/AdventureTranslationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/AbstractTranslationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/repositories/FilesTranslationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/repositories/FilesTranslationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,23 +66,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NeruxVace/Developer/apis" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,12 +84,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621100004862</updated>
-      <workItem from="1621100006171" duration="66000" />
+      <workItem from="1621100006171" duration="1006000" />
+      <workItem from="1621107800393" duration="84000" />
+      <workItem from="1621107996805" duration="593000" />
+      <workItem from="1621154044294" duration="13000" />
+      <workItem from="1621154074579" duration="2000" />
+      <workItem from="1621754973554" duration="2113000" />
+      <workItem from="1621757112414" duration="11328000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1621100170243</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621100170243</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="i18n-paper">
+    <output-path>$PROJECT_DIR$/out/artifacts/i18n_paper</output-path>
+    <root id="archive" name="i18n-paper.jar">
+      <element id="module-output" name="i18n-paper" />
+      <element id="module-output" name="i18n-common" />
+      <element id="module-output" name="i18n-api" />
+      <element id="module-output" name="i18n-adventure" />
+    </root>
+  </artifact>
+</component>

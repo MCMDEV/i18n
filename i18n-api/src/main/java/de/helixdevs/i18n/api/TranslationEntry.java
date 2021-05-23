@@ -26,4 +26,13 @@ public class TranslationEntry {
     public MessageFormat getMessageFormat() {
         return messageFormat;
     }
+
+    @Override
+    public String toString() {
+        return "TranslationEntry{" +
+                "locale=" + locale +
+                ", key='" + key + '\'' +
+                ", messageFormat=" + messageFormat +
+                '}';
+    }
 }

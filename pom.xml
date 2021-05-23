@@ -13,6 +13,7 @@
         <module>i18n-paper</module>
         <module>i18n-api</module>
         <module>i18n-adventure</module>
+        <module>i18n-protocollib</module>
     </modules>
 
     <properties>
@@ -24,6 +25,14 @@
         <repository>
             <id>sonatype-oss-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>dmulloy2-repo</id>
+            <url>https://repo.dmulloy2.net/repository/public/</url>
         </repository>
     </repositories>
 

@@ -12,6 +12,8 @@
         <module name="i18n-adventure" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="i18n-protocollib" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

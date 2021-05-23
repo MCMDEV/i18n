@@ -1,0 +1,7 @@
+name: i18n
+version: 0.1
+api-version: 1.16
+author: MCMDEV
+main: de.helixdevs.i18n.paper.I18nPaperPlugin
+depend:
+  - ProtocolLib
