@@ -23,8 +23,11 @@ public class TranslationManagerImpl implements TranslationManager {
 
     @Override
     public void registerToPlatforms()    {
-        translationConsumers.forEach(translationConsumer -> {
-            translationConsumer.register(translationRepositories);
-        });
+        translationConsumers.forEach(translationConsumer -> translationConsumer.register(translationRepositories));
+    }
+
+    @Override
+    public void unregisterFromPlatforms() {
+        translationConsumers.forEach(translationConsumer -> translationConsumer.unregister(translationRepositories));
     }
 }

@@ -25,7 +25,6 @@
 
 package de.helixdevs.i18n.common.repositories;
 
-import com.sun.istack.internal.Nullable;
 import de.helixdevs.i18n.api.TranslationEntry;
 import de.helixdevs.i18n.api.TranslationRepository;
 
@@ -103,7 +102,7 @@ public class FilesTranslationRepository implements TranslationRepository {
      * @return a locale
      * @since 4.0.0
      */
-    private static @Nullable Locale parseLocale(final String string) {
+    private static Locale parseLocale(final String string) {
         final String[] segments = string.split("_", 3); // language_country_variant
         final int length = segments.length;
         if(length == 1) {

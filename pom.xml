@@ -13,7 +13,6 @@
         <module>i18n-paper</module>
         <module>i18n-api</module>
         <module>i18n-adventure</module>
-        <module>i18n-protocollib</module>
     </modules>
 
     <properties>

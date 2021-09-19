@@ -1,6 +1,7 @@
 package de.helixdevs.i18n.common.platform;
 
 import de.helixdevs.i18n.api.TranslationConsumer;
+import de.helixdevs.i18n.common.command.api.Command;
 
 import java.util.List;
 import java.util.Set;
@@ -15,4 +16,6 @@ public interface I18nPlugin {
     Set<TranslationConsumer> getConsumers();
 
     Logger getLogger();
+
+    void registerCommand(Command command);
 }

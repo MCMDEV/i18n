@@ -8,4 +8,6 @@ public interface TranslationManager {
 
     void registerToPlatforms();
 
+    void unregisterFromPlatforms();
+
 }

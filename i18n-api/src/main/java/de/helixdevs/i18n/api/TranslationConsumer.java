@@ -6,4 +6,5 @@ public interface TranslationConsumer {
 
     void register(Set<TranslationRepository> repositories);
 
+    void unregister(Set<TranslationRepository> repositories);
 }
