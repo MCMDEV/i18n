@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="Release 1.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-adventure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-adventure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-velocity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-velocity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/I18nVelocityPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/I18nVelocityPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,7 +100,7 @@
       <workItem from="1647185809950" duration="726000" />
       <workItem from="1647186547369" duration="4019000" />
       <workItem from="1647196381385" duration="243000" />
-      <workItem from="1647196632206" duration="112000" />
+      <workItem from="1647196632206" duration="562000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1621100170243</created>
@@ -145,11 +137,29 @@
       <option name="project" value="LOCAL" />
       <updated>1647192543513</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Release 1.0">
+      <created>1647196875014</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647196875014</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
