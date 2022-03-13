@@ -13,6 +13,7 @@
         <module>i18n-paper</module>
         <module>i18n-api</module>
         <module>i18n-adventure</module>
+        <module>i18n-velocity</module>
     </modules>
 
     <properties>
