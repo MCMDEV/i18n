@@ -46,8 +46,8 @@ public class I18nPlatform {
     }
 
     public void reload()    {
-        loadCommands();
         unloadTranslations();
+        loadTranslations();
     }
 
     public void disable() {

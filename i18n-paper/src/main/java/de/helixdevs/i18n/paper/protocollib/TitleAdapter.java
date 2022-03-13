@@ -7,7 +7,7 @@ import org.bukkit.plugin.Plugin;
 
 public class TitleAdapter extends PacketAdapter implements ITranslationAdapter {
     public TitleAdapter(Plugin plugin) {
-        super(plugin, PacketType.Play.Server.TITLE);
+        super(plugin, PacketType.Play.Server.SET_TITLE_TEXT, PacketType.Play.Server.SET_SUBTITLE_TEXT);
     }
 
     @Override

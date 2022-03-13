@@ -10,37 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/command/CommandReloadtranslations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/command/api/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/command/api/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/command/BukkitSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/BossbarAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/ChatAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/DisconnectAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/EntityMetadataAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/EquipmentAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/HeaderFooterAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/ITranslationAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/ObjectiveAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/OpenWindowAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/PlayerInfoAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/SetSlotAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TeamAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TitleAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/WindowItemsAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/i18n_paper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/i18n_paper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-adventure/i18n-adventure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-adventure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-adventure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n-adventure/src/main/java/de/helixdevs/i18n/adventure/AdventureTranslationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-adventure/src/main/java/de/helixdevs/i18n/adventure/AdventureTranslationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/src/main/java/de/helixdevs/i18n/api/TranslationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/TranslationManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/TranslationManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlatform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/platform/I18nPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/repositories/FilesTranslationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/src/main/java/de/helixdevs/i18n/common/repositories/FilesTranslationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/I18nPaperPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/I18nPaperPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TranslationPacketAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/i18n-paper/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-paper/i18n-paper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TitleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/src/main/java/de/helixdevs/i18n/paper/protocollib/TitleAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -76,10 +59,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Comp/ProtocolLib-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -91,10 +73,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Debug" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/../../TestServer/1.16.5-dev/paper-1.16.5-719.jar" />
-      <option name="WORKING_DIRECTORY" value="D:\Documents\Minecraft\TestServer\1.16.5-dev" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../../TestServer/1.18.2/paper-1.18.2-238.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\Documents\Minecraft\TestServer\1.18.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH" value="azul-17" />
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="i18n-paper" />
@@ -125,6 +107,9 @@
       <workItem from="1623600423746" duration="666000" />
       <workItem from="1623601217447" duration="9083000" />
       <workItem from="1623679144929" duration="587000" />
+      <workItem from="1632066894659" duration="1783000" />
+      <workItem from="1647185809950" duration="726000" />
+      <workItem from="1647186547369" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1621100170243</created>
@@ -140,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621784919181</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="More adapters">
+      <created>1632066998561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632066998561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +141,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Basic implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic implementation" />
+    <MESSAGE value="More adapters" />
+    <option name="LAST_COMMIT_MESSAGE" value="More adapters" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

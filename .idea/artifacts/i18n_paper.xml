@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="i18n-paper">
-    <output-path>$PROJECT_DIR$/../../TestServer/1.16.5-dev/plugins</output-path>
+    <output-path>$PROJECT_DIR$/../../TestServer/1.18.2/plugins</output-path>
     <root id="archive" name="i18n-paper.jar">
       <element id="module-output" name="i18n-paper" />
       <element id="module-output" name="i18n-common" />

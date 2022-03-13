@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class AdventureTranslationConsumer implements TranslationConsumer {
 
-    private final GlobalTranslator globalTranslator = GlobalTranslator.get();
+    private final GlobalTranslator globalTranslator = GlobalTranslator.translator();
     private final TranslationRegistry adventureRegistry = TranslationRegistry.create(Key.key("i18n", "main"));
 
     @Override
