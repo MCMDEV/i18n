@@ -9,14 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/i18n_velocity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-velocity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/I18nVelocityPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/command/VelocitySender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="74946188-9329-4ff1-a845-b7e2e0d1d7a2" name="Default Changelist" comment="Release 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-adventure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-adventure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-paper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-velocity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-velocity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/I18nVelocityPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/i18n-velocity/src/main/java/de/helixdevs/i18n/velocity/I18nVelocityPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,9 @@
       <workItem from="1623679144929" duration="587000" />
       <workItem from="1632066894659" duration="1783000" />
       <workItem from="1647185809950" duration="726000" />
-      <workItem from="1647186547369" duration="3920000" />
+      <workItem from="1647186547369" duration="4019000" />
+      <workItem from="1647196381385" duration="243000" />
+      <workItem from="1647196632206" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1621100170243</created>
@@ -136,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647187097560</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added support for Velocity platform">
+      <created>1647192543513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647192543513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +156,9 @@
     <MESSAGE value="Basic implementation" />
     <MESSAGE value="More adapters" />
     <MESSAGE value="Fixed title packet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed title packet" />
+    <MESSAGE value="Added support for Velocity platform" />
+    <MESSAGE value="Release 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release 1.0" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
