@@ -1,5 +1,6 @@
 package de.helixdevs.i18n.paper.protocollib;
 
+import com.comphenix.protocol.events.AbstractStructure;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
@@ -20,16 +21,16 @@ public interface ITranslationAdapter {
 
     static final GsonComponentSerializer gsonComponentSerializer = GsonComponentSerializer.gson();
 
-    default void handleItem(Player player, PacketContainer packet, int index) {
+    default void handleItem(Player player, AbstractStructure packet, int index) {
         packet.getItemModifier().modify(index, item -> modifyItem(player, item));
     }
 
-    default void handleItemList(Player player, PacketContainer packet, int index) {
+    default void handleItemList(Player player, AbstractStructure packet, int index) {
         packet.getItemListModifier().modify(index, itemList ->
                 itemList.stream().map(itemStack -> modifyItem(player, itemStack)).collect(Collectors.toList()));
     }
 
-    default void handleItemArray(Player player, PacketContainer packet, int index) {
+    default void handleItemArray(Player player, AbstractStructure packet, int index) {
         packet.getItemArrayModifier().modify(index, itemArray -> {
             for (int i = 0; i < itemArray.length; i++) {
                 itemArray[i] = modifyItem(player, itemArray[i]);
@@ -38,7 +39,7 @@ public interface ITranslationAdapter {
         });
     }
 
-    default void handleSlotPair(Player player, PacketContainer packet, int index) {
+    default void handleSlotPair(Player player, AbstractStructure packet, int index) {
         packet.getSlotStackPairLists().modify(index, slotPairs -> {
             for (Pair<EnumWrappers.ItemSlot, ItemStack> slotPair : slotPairs) {
                 slotPair.setSecond(modifyItem(player, slotPair.getSecond()));
@@ -47,11 +48,11 @@ public interface ITranslationAdapter {
         });
     }
 
-    default void handleChatComponent(Player player, PacketContainer packet, int index) {
+    default void handleChatComponent(Player player, AbstractStructure packet, int index) {
         packet.getChatComponents().modify(index, wrappedChatComponent -> translate(player, wrappedChatComponent));
     }
 
-    default void handleChatComponentArray(Player player, PacketContainer packet, int index) {
+    default void handleChatComponentArray(Player player, AbstractStructure packet, int index) {
         packet.getChatComponentArrays().modify(index, wrappedChatComponents -> {
             for (int i = 0; i < wrappedChatComponents.length; i++) {
                 wrappedChatComponents[i] = translate(player, wrappedChatComponents[i]);

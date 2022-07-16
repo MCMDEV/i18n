@@ -12,7 +12,13 @@ public class TeamAdapter extends PacketAdapter implements ITranslationAdapter {
 
     @Override
     public void onPacketSending(PacketEvent event) {
-        handleChatComponent(event.getPlayer(), event.getPacket(), 0);
-        handleChatComponent(event.getPlayer(), event.getPacket(), 1);
+        event.getPacket().getOptionalStructures().modify(0, structureOptional -> {
+            structureOptional.ifPresent(internalStructure -> {
+                handleChatComponent(event.getPlayer(), internalStructure, 0);
+                handleChatComponent(event.getPlayer(), internalStructure, 1);
+                handleChatComponent(event.getPlayer(), internalStructure, 2);
+            });
+            return structureOptional;
+        });
     }
 }
