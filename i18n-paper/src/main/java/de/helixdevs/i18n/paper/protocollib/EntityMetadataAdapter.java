@@ -23,6 +23,10 @@ public class EntityMetadataAdapter extends PacketAdapter implements ITranslation
             watchableObjects.forEach(wrappedWatchableObject -> {
                 if (wrappedWatchableObject.getValue() instanceof Optional<?> optional) {
                     optional.ifPresent(o -> {
+                        if(o instanceof WrappedChatComponent wrappedChatComponent)  {
+                            WrappedChatComponent translated = translate(event.getPlayer(), wrappedChatComponent);
+                            wrappedWatchableObject.setValue(Optional.of(translated.getHandle()));
+                        }   else
                         if(MinecraftReflection.getIChatBaseComponentClass().isAssignableFrom(o.getClass())) {
                             WrappedChatComponent wrappedChatComponent = WrappedChatComponent.fromHandle(o);
                             WrappedChatComponent translated = translate(event.getPlayer(), wrappedChatComponent);
