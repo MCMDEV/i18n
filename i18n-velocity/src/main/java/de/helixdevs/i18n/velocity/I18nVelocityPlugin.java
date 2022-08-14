@@ -32,7 +32,7 @@ import java.util.logging.Logger;
 @Plugin(
         id = "i18n",
         name = "I18n",
-        version = "1.1",
+        version = "1.2",
         description = "Velocity implementation of I18n",
         authors = {"MCMDEV"}
 )
