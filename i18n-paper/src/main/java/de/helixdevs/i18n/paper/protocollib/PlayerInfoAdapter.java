@@ -17,11 +17,13 @@ public class PlayerInfoAdapter extends PacketAdapter implements ITranslationAdap
     @Override
     public void onPacketSending(PacketEvent event) {
         List<PlayerInfoData> playerInfoData = new ArrayList<>();
-        event.getPacket().getPlayerInfoDataLists().read(0).forEach(data -> {
+
+        //Using index 1 due to https://github.com/dmulloy2/ProtocolLib/issues/2321#issuecomment-1501833250
+        event.getPacket().getPlayerInfoDataLists().read(1).forEach(data -> {
             playerInfoData.add(new PlayerInfoData(data.getProfile(), data.getLatency(),
                     data.getGameMode(), translate(event.getPlayer(), data.getDisplayName()))
             );
         });
-        event.getPacket().getPlayerInfoDataLists().write(0, playerInfoData);
+        event.getPacket().getPlayerInfoDataLists().write(1, playerInfoData);
     }
 }
