@@ -18,8 +18,6 @@ public class ChatAdapter extends PacketAdapter implements ITranslationAdapter {
 
     @Override
     public void onPacketSending(PacketEvent event) {
-        var packet = event.getPacket();
-        handleChatComponent(event.getPlayer(), event.getPacketType(), packet, 0);
-        event.setPacket(packet);
+        handleChatComponent(event.getPlayer(), event.getPacketType(), event.getPacket(), 0);
     }
 }

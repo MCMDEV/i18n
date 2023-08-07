@@ -3,14 +3,12 @@ package de.helixdevs.i18n.paper.protocollib;
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.AbstractStructure;
 import com.comphenix.protocol.events.PacketContainer;
+import com.comphenix.protocol.wrappers.AdventureComponentConverter;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import de.helixdevs.i18n.paper.protocollib.util.ReflectiveAdventureComponentConverter;
-import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.gson.GsonComponentSerializer;
 import net.kyori.adventure.translation.GlobalTranslator;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -68,8 +66,9 @@ public interface ITranslationAdapter {
                 return;
             }
             var handle = packet.getStructures().read(0).getHandle();
-            var component = ReflectiveAdventureComponentConverter.componentToString(handle);
-            var translate = translate(player, WrappedChatComponent.fromJson(component));
+            var translate = translate(player, AdventureComponentConverter.fromComponent(
+                    AdventureComponentConverter.clone(handle)
+            ));
             packet.getModifier().write(0, null);
             packet.getStrings().write(0, translate.getJson());
         }
@@ -109,10 +108,8 @@ public interface ITranslationAdapter {
         if (wrappedChatComponent == null) {
             return null;
         }
-        var component = GlobalTranslator.render(gsonComponentSerializer.deserialize(wrappedChatComponent.getJson()), player.locale());
-        Bukkit.getLogger().info("Translation:" + gsonComponentSerializer.serialize(component));
         return WrappedChatComponent.fromJson(gsonComponentSerializer.serialize(
-                component
+                GlobalTranslator.render(gsonComponentSerializer.deserialize(wrappedChatComponent.getJson()), player.locale())
         ));
     }
 
