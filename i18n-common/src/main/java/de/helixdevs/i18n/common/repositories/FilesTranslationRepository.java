@@ -38,6 +38,7 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.PropertyResourceBundle;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class FilesTranslationRepository implements TranslationRepository {
 
@@ -50,9 +51,8 @@ public class FilesTranslationRepository implements TranslationRepository {
     }
 
     private void load() {
-        try {
-            Files.walk(rootPath, 16).forEach(path -> {
-
+        try (Stream<Path> pathStream = Files.walk(rootPath, 16)) {
+            pathStream.forEach(path -> {
                 File file = path.toFile();
                 String fileName = file.getName();
                 if (!fileName.endsWith(".properties")) {
@@ -105,11 +105,11 @@ public class FilesTranslationRepository implements TranslationRepository {
     private static Locale parseLocale(final String string) {
         final String[] segments = string.split("_", 3); // language_country_variant
         final int length = segments.length;
-        if(length == 1) {
+        if (length == 1) {
             return new Locale(string); // language
-        } else if(length == 2) {
+        } else if (length == 2) {
             return new Locale(segments[0], segments[1]); // language + country
-        } else if(length == 3) {
+        } else if (length == 3) {
             return new Locale(segments[0], segments[1], segments[2]); // language + country + variant
         }
         return null;

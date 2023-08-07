@@ -5,11 +5,8 @@ import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.utility.MinecraftReflection;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import com.comphenix.protocol.wrappers.WrappedDataWatcher;
 import org.bukkit.plugin.Plugin;
 
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
 import java.util.Optional;
 
 public class EntityMetadataAdapter extends PacketAdapter implements ITranslationAdapter {
@@ -19,26 +16,26 @@ public class EntityMetadataAdapter extends PacketAdapter implements ITranslation
 
     @Override
     public void onPacketSending(PacketEvent event) {
-        event.getPacket().getWatchableCollectionModifier().modify(0, watchableObjects -> {
-            watchableObjects.forEach(wrappedWatchableObject -> {
-                if (wrappedWatchableObject.getValue() instanceof Optional<?> optional) {
+        event.getPacket().getDataValueCollectionModifier().modify(0, wrappedDataValues -> {
+            wrappedDataValues.forEach(wrappedDataValue -> {
+                if (wrappedDataValue.getValue() instanceof Optional<?> optional) {
                     optional.ifPresent(o -> {
                         if(o instanceof WrappedChatComponent wrappedChatComponent)  {
                             WrappedChatComponent translated = translate(event.getPlayer(), wrappedChatComponent);
-                            wrappedWatchableObject.setValue(Optional.of(translated.getHandle()));
+                            wrappedDataValue.setValue(Optional.of(translated.getHandle()));
                         }   else
                         if(MinecraftReflection.getIChatBaseComponentClass().isAssignableFrom(o.getClass())) {
                             WrappedChatComponent wrappedChatComponent = WrappedChatComponent.fromHandle(o);
                             WrappedChatComponent translated = translate(event.getPlayer(), wrappedChatComponent);
-                            wrappedWatchableObject.setValue(Optional.of(translated.getHandle()));
+                            wrappedDataValue.setValue(Optional.of(translated.getHandle()));
                         }
                     });
                 }
-                if(wrappedWatchableObject.getValue().getClass().equals(WrappedChatComponent.class))   {
-                    wrappedWatchableObject.setValue(translate(event.getPlayer(), (WrappedChatComponent) wrappedWatchableObject.getValue()));
+                if(wrappedDataValue.getValue().getClass().equals(WrappedChatComponent.class))   {
+                    wrappedDataValue.setValue(translate(event.getPlayer(), (WrappedChatComponent) wrappedDataValue.getValue()));
                 }
             });
-            return watchableObjects;
+            return wrappedDataValues;
         });
     }
 }

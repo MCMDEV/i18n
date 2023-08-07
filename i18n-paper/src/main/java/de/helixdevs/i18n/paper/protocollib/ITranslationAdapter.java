@@ -1,13 +1,16 @@
 package de.helixdevs.i18n.paper.protocollib;
 
+import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.AbstractStructure;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
+import de.helixdevs.i18n.paper.protocollib.util.ReflectiveAdventureComponentConverter;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.gson.GsonComponentSerializer;
 import net.kyori.adventure.translation.GlobalTranslator;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -52,6 +55,26 @@ public interface ITranslationAdapter {
         packet.getChatComponents().modify(index, wrappedChatComponent -> translate(player, wrappedChatComponent));
     }
 
+    default void handleChatComponent(Player player, PacketType type, PacketContainer packet, int index) {
+        if (type == PacketType.Play.Server.CHAT || type == PacketType.Play.Server.DISGUISED_CHAT) {
+            packet.getChatComponents().modify(index, wrappedChatComponent -> translate(player, wrappedChatComponent));
+            return;
+        }
+        if (type == PacketType.Play.Server.SYSTEM_CHAT) {
+            var read = packet.getStrings().read(0);
+            if (read != null) {
+                var translate = translate(player, WrappedChatComponent.fromJson(read));
+                packet.getStrings().write(0, translate.getJson());
+                return;
+            }
+            var handle = packet.getStructures().read(0).getHandle();
+            var component = ReflectiveAdventureComponentConverter.componentToString(handle);
+            var translate = translate(player, WrappedChatComponent.fromJson(component));
+            packet.getModifier().write(0, null);
+            packet.getStrings().write(0, translate.getJson());
+        }
+    }
+
     default void handleChatComponentArray(Player player, AbstractStructure packet, int index) {
         packet.getChatComponentArrays().modify(index, wrappedChatComponents -> {
             for (int i = 0; i < wrappedChatComponents.length; i++) {
@@ -86,7 +109,11 @@ public interface ITranslationAdapter {
         if (wrappedChatComponent == null) {
             return null;
         }
-        return WrappedChatComponent.fromJson(gsonComponentSerializer.serialize(GlobalTranslator.render(gsonComponentSerializer.deserialize(wrappedChatComponent.getJson()), player.locale())));
+        var component = GlobalTranslator.render(gsonComponentSerializer.deserialize(wrappedChatComponent.getJson()), player.locale());
+        Bukkit.getLogger().info("Translation:" + gsonComponentSerializer.serialize(component));
+        return WrappedChatComponent.fromJson(gsonComponentSerializer.serialize(
+                component
+        ));
     }
 
 }
