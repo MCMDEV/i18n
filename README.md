@@ -45,6 +45,8 @@ give @p stone{display:{Name:'{"translate":"holyStone.name","color":"dark_purple"
 ```
 You will receive an item called "Holy Stone" that is automatically translated into "Heiliger Stein" if the player's language client language is German.
 
+## Dependencies:
+- ProtocolLib
 
 ## Issues:
 - Items will not be translated correctly if they are in the inventory of a player who is in creative mode. This is an issue caused by the client and cannot be fixed by the plugin.
